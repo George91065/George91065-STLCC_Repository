@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>The Magnificent Mushroom</title>
+<title>Magnificent Mushroom...</title>
       <!--
          Magnificent Mushroom main web page
-         Filename: index.html
+         Filename: mission.html
       
-         Author: George Gates  
-         Date: September 15, 2018    
+         Author: Erin Pillmann  
+         Date: September 17, 2018    
          Breadsticks development of website for Professor Hvatum
 		 
 		 Supporting files: 	main.css
-							menu.html
+							index.html
 							mission.htm
 							Mushrooms.htm
 							404.html
@@ -21,20 +21,23 @@
 							register.htm
 							resources.htm
 							support.htm
+			Image Files:	mission_look			
 							
       -->
-
 <meta name="description" content="A lynda.com example of HTML5 and CSS3">
 <meta name="keywords" content="html5, css3, lynda, local storage, canvas, forms, semantics, web apps">
 <!--make sure mobile devices display the page at the proper scale	-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="css/main.css" rel="stylesheet" type="text/css" media='screen'>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link href="css/main.css" rel="stylesheet" type="text/css" media="screen, projection">
 </head>
-<body id="home" class="no-js">
+<body class="no-js">
 <div id="wrapper">
-  <header id="mainHeader"> <a href="index.html" title="Home" class="logo">
+  <header id="mainHeader"> <a href="index.html" title="home" class="logo">
    <!-- I need this div because IE is an affront to mankind-->
-    <div>
+    <div id="logo">
     <h1>Magnificent Mushroom</h1>
     </div>
     </a>
@@ -44,12 +47,11 @@
        <li><a href="menu.html" title="Our Menu">Menu <br /><span class="tagline">Taste our bites</span></a>
           <ul>
             <li><a href="menu.html" title="Our Menu">Featured Items</a></li>
-			<!--09172018GRG - Added target="_blank"-->
             <li><a href="documents/MissouriWines_eBook_Track.pdf" title="Wine Menu" target="_blank">Wine Menu</a></li>
             <li><a href="documents/Lulus_Menu_Spring17.pdf" title="Complete Menu" target="_blank">Complete Menu</a></li>			
           </ul>
         </li>
-        <li><a href="mission.htm" title="What we believe">Mission <br /><span class="tagline">what makes us different?</span></a></li>
+        <li><a href="mission.htm" title="What we believe" class="current">Mission <br /><span class="tagline">what makes us different?</span></a></li>
         <li><a href="resources.htm" title="planning resources">Reservations <br /><span class="tagline">set your reservations</span></a>
           <ul>
             <li><a href="404.html" title="Got questions?">Restaurant FAQs</a></li>
@@ -70,54 +72,39 @@
       </ul>
     </nav>
   </header>
-  <section id="actionCall">
-  <h1>The Magnificent Mushroom</h1>
-  <a href="404.html" title="Find your table!"><h2>Find your table</h2></a>
-  </section>
-  <div id="contentWrapper">
   <section id="mainContent">
- <article id="mainArticle"> 
- <h1>This Month's Spotlight</h1>
-  <p class="spotlight">This month's spotlight package is Clean Up The SouthSide. Whether you are looking for some serious Vegan eats or great tasting wine, you'll find something to love down on South Grand Blvd.<br /> <span class="accent"><a href="/Menu_cycle.htm" title="Magnificent Mushroom details">Restaurant details</a></span></p>
-  <h1>Magnificent Mushroom's Podcast</h1>
-<video controls poster="images/podcast_poster.jpg" width="512" height="288" preload="none">
-	<source src="video/podcast_teaser.mp4" type="video/mp4" />
-	<!--<source src="_video/podcast_teaser.webm" type="video/webm" />-->
-	<!--<source src="_video/podcast_teaser.theora.ogv"type="video/ogg" />-->
-</video>
-  <p class="videoText">Join us each month as we publish a new Magnificent Mushroom video podcast, with featured specials, customer photos, and some exctiing new features!<span class="accent"><a href="404.html" title="Video Podcast">Watch the full video</a></span></p>
-  </article>
-  </section>
-    <aside id="secondaryContent">
-        <div id="specials" class="callOut">
-            <h1>Monthly Events</h1>
-            <h2 class="top"><img src="images/WineImageIcon.jpg" alt="Missouri Wines" width="75" height="75">Missouri Wines</h2>
-            <p>
-                Wine Tasting Package <br>
-                <a href="404.html">$25</a>
-            </p>
-            <h2><img src="images/localfarmers.png" alt="Local Farmers" width="75" height="75">Local Farmers</h2>
-            <p>
-                Fresh Produce <br>
-                <a href="404.html">Market Price</a>
-            </p>
-            <h2><img src="images/Budweiser.jpg" alt="Tour St. Louis" width="75" height="41">Tour St. Louis</h2>
-            <p>
-                Tour Entry Fee <br>
-                <a href="404.html">$15.95</a>
-            </p>
-            <h2><img src="images/taste_bug.gif" alt="The Taste of South Grand" width="75" height="75">The Taste of South Grand</h2>
-            <p>
-                Come Join US <br>
-                <a href="Menu/tour_detail_taste.htm">$18.00</a>
-            </p>
+  <header id="contentHeader">
+  <h1>Our Mission</h1>
+  </header>
+ <article id="mainArticle"> <h1>Who we are</h1>
+ <img src="images/mission_look.jpg" alt="Looking out at the Pacific" class="articleImage" />
+ <div class="multiCol"> <p>We are passionate about Missouri and preserving the abundant resources that make it so unique. Our goal at the Magnificent Mushroom is to transform your dining experience into an adventure that will educate, inspire, and energize you unlike any other.</p> 
+   <p>Our Menus are crafted around our central mission, and are designed to engage your eating experience in a unique and fulfilling way. All of Our Menus are sensitive to the environment, and will provide you with an opportunity to explore many food options.</p>
+   <p>We've been asked before how we choose Our Menu. It's simple really, we approach Our Menu as the enthusiasts we are! When we scout for local fresh produce, we choose the best produce options from the surrounding area, we ask ourselves one question, &quot;is this something we would want to eat?&quot; We also look very carefully at a food's potential impact to our environment. We choose Menu that are as environmentally sensitive as we are!</p>
+   <p>We've also worked very hard to make the Magnificent Mushroom more than just another restaurant. <a href="404.html">Join our community</a> and become part of the conversation. Recommend Menu, blog about your experience in our restaurant, and share pictures and video with other team.</p></div>
+ </article>
+ </section>
+  <aside id="secondaryContent">
+  <div id="specials" class="callOut">
+        <h1>Monthly Events</h1>
+        <h2 class="top"><img src="images/WineImageIcon.jpg" alt="Missouri Wines" width="75" height="75" />Missouri Wines</h2>
+        <p>Wine Tasting Package <br />
+          <a href="404.html">$25</a></p>
+        <h2><img src="images/localfarmers.png" alt="Local Farmers" width="75" height="75" />Local Farmers</h2>
+        <p>Fresh Produce <br />
+          <a href="404.html">Market Price</a></p>
+        <h2><img src="images/Budweiser.jpg" alt="Tour St. Louis" width="75" height="41" />Tour St. Louis</h2>
+        <p>Tour Entry Fee <br />
+          <a href="404.html">$15.95</a></p>
+          <h2><img src="images/taste_bug.gif" alt="The Taste of South Grand" width="75" height="75" />The Taste of South Grand</h2>
+        <p>Come Join US <br />
+          <a href="Menu/tour_detail_taste.htm">$18.00</a></p>
+      </div>
+      <div id="trivia" class="callOut">
+        <h1>Did You Know?</h1>
+        <p> Harry Truman was the only U.S. President to hail from Missouri. After he left the White House in 1953, he and his wife Bess moved back to the Independence home they shared with his mother-in-law and lived off his $112.56 monthly Army pension.</p>
         </div>
-        <div id="trivia" class="callOut">
-            <h1>Did You Know?</h1>
-            <p>Our restaurant gives back to the community!</p>
-        </div>
-    </aside>
-  </div>
+  </aside>
   <footer id="pageFooter">
   <section id="quickLinks">
   <h1>Quick Nav</h1>
@@ -129,11 +116,11 @@
       <li><a href="Mushrooms.htm" title="Join our community">Mushrooms</a></li>
       <li><a href="contact.htm" title="Contact and support">Contact</a></li>
     </ul>
-  </section>
+    </section>
   <section id="footerResources">
   <h1>Resources</h1>
     <ul id="quickNav">
-      <li><a href="404.html" title="Our home page">FAQ</a></li>
+      <li><a href="404.htm" title="Our home page">FAQ</a></li>
       <li><a href="support.htm" title="Need help?">Support</a></li>
       <li><a href="resources/legal.htm" title="The fine print">Legal</a></li><li><a href="login.htm">Login</a></li>
     </ul>
