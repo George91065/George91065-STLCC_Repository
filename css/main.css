@@ -1,12 +1,5 @@
 @charset "UTF-8";
 
-/*style sheet for Explore Missouri
-
-©2011 lynda.com
-This style sheet may be reused for personal education only
-any reuse, educational or otherwise, without the expressed 
-consent of lynda.com is prohibited.*/
-
 /* -------- color guide ----------
 #3c6b92 : main blue
 #6acce2 : light blue
@@ -20,7 +13,30 @@ consent of lynda.com is prohibited.*/
 #896287 : purple
 */
 
-/* to jump to a specific section search for the unique character pair at the front of each TOC section 
+/* 
+      <!--
+         Magnificent Mushroom main web page
+         Filename: main.css
+      
+         Author: George Gates  (template: lynda.com)
+         Date: September 15, 2018    
+         Breadsticks development of website for Professor Hvatum
+		 
+		 Supporting files: 	index.html
+							menu.html
+							mission.htm
+							Mushrooms.htm
+							404.html
+							contact.htm
+							login.htm
+							register.htm
+							resources.htm
+							support.htm
+							
+      -->
+
+
+to jump to a specific section search for the unique character pair at the front of each TOC section 
 	<<<tip, highlight the special character and use the shortcut for Find Selection Cntr/Cmd + Shift + G >> */
 	
 	/* ----- Style sheet TOC ----------------
@@ -266,21 +282,21 @@ span.accent {
 	margin-bottom: 25px;
 	-webkit-border-top-left-radius: 0px;
 	-webkit-border-top-right-radius: 0px;
-	-webkit-border-bottom-right-radius: 20px;
+	-webkit-border-bottom-right-radius: 0px;
 	-webkit-border-bottom-left-radius: 0px;
 	-moz-border-radius-topleft: 0px;
 	-moz-border-radius-topright: 0px;
-	-moz-border-radius-bottomright: 20px;
+	-moz-border-radius-bottomright: 0px;
 	-moz-border-radius-bottomleft: 0px;
 	border-top-left-radius: 0px;
 	border-top-right-radius: 0px;
-	border-bottom-right-radius: 20px;
+	border-bottom-right-radius: 0px;
 	border-bottom-left-radius: 0px;
 	width: 385px;
 }
 /* ^3 ------------- home page specfic layout styles ----------- */
 #home #wrapper {
-	background: #000 url(../images/home_page_back.jpg) no-repeat 0 100px;
+	background: #e2e2e2 url(../images/home_page_back.jpg) no-repeat 0 100px;
 }
 #actionCall {
 	clear: both;
@@ -292,14 +308,23 @@ span.accent {
 	color: #13f364;
 	text-shadow: 1px 0px 0px #000;
 	filter: dropshadow(color=#000000, offx=1, offy=0); 
-	margin: 70px 0 0 607px;
+	margin: 70px 0 0 900px;
 	letter-spacing:1px;
+}
+#actionCall div.mapouter{
+	font: normal 2.8em DejaVuSansCond, Arial, sans-serif;
+	color: #13f364;
+	text-shadow: 1px 0px 0px #000;
+	filter: dropshadow(color=#000000, offx=1, offy=0); 
+	margin: 130px 0 0 800px;
+	letter-spacing:1px;
+    
 }
 #actionCall a:link, #actionCall a:visited{
 	border: none;
 	width: 160px;
 	height: 160px;
-	background: url(../images/reservation.jpg) no-repeat;
+	/*background: url(../images/reservation.jpg) no-repeat;*/
 	display:block;
 	margin: 70px 0 0 1095px;
 }
@@ -318,7 +343,7 @@ span.accent {
 	width: 1180px;
 }
 #home #mainContent {
-	float: right;
+	float: left;
 	width: 700px;
 	padding-right: 0;
 	margin-right: 0;
@@ -402,15 +427,33 @@ span.accent {
 	text-align: left;
 	z-index: 1; /*fix for IE menu issues*/
 }
+#mapouter {
+ 	position: relative;
+	padding: 0;
+	width: 1280px;
+	margin: 25px auto 0;
+	background: #fff;
+	text-align: left;
+	z-index: 1; /*fix for IE menu issues*/
+}
 #mainHeader {
-	position: relative;
+	/*position: relative; grg 10/06/2018*/
+	position: fixed;
+	top: 25px; /*grg 10/06/2018*/
 	float: left;
 	z-index: 2; /*fix for IE menu issues*/
 }
 #mainContent {
-	float: right;
+	float: left;
 	width: 740px;
-	margin-right: 25px;
+	margin-top: 150px;
+	margin-left: 25px;
+	overflow: hidden;
+}
+#contactContent {
+	float: left;
+	width: 740px;
+	margin-left: 25px;
 	overflow: hidden;
 }
 #secondaryContent {
@@ -435,12 +478,13 @@ span.accent {
 }
 #mainHeader a.logo{
 	width: 192px;
-	height: 237px;
+	/*height: 237px;*/
+	height: 190px; /*grg 10/06/2018*/
 	display: block;
 	background: url(../images/logo.jpg) no-repeat;
 	position: absolute;
-	top: 0px;
-	left: 35px;
+	top: 0px; /*grg 10/6/2018*/
+	left: 25px;
 	text-indent: -1000em;
 	z-index: 2000;
 }
@@ -456,14 +500,14 @@ span.accent {
 	float: left;
 }
 #siteNav > ul {
-	height: 100px;
+	height: 70px;
 	background-color: #b3b3b3;
 	width: 1038px; /*add padding-left for total width*/
 	padding-left: 242px; /*allow logo to clear*/
 }
 #siteNav ul > li {
 	float: left;
-	margin:2.5em 0 0;
+	margin:1em 0 0; /*1 was 2.5em*/
 	padding: 0;
 	position: relative;
 }
@@ -608,7 +652,7 @@ span.accent {
 	font: normal 1.4em DejaVuSansCond, Arial, sans-serif;
 	color: #2c566a;
 }
-#mainContent #mainArticle h2 span.tourCost {
+#mainContent #mainArticle h2 span.showCost {
 	font-size: .8em;
 	color: #666;
 	font-style: italic;
@@ -665,21 +709,21 @@ span.accent {
 	background: #952;
 	border: none;
 }
-#mainContent div.tourDescription {
+#mainContent div.MagnificentDescription {
 	border-top: 2px solid #2c566a;
 	float: left;
 	clear: left;
 	padding: 10px 0;
 	margin-bottom: 15px;
 }
-#mainContent .tourDescription h2 {
+#mainContent .MagnificentDescription h2 {
 	font-size: 1.6em;
 	color: #193742;
 	font-weight: bold;
 	margin-bottom: .5em;
 	clear: right;
 }
-#mainContent .tourDescription h3.price {
+#mainContent .MagnificentDescription h3.price {
 	font-size: 1.2em;
 	font-family: DroidSerif, Georgia, "Times New Roman", Times, serif;
 	color: #666;
@@ -689,20 +733,20 @@ span.accent {
 	clear: right;
 	margin: -1.6em 0 1em;
 }
-#mainContent .tourDescription p {
+#mainContent .MagnificentDescription p {
 	font-size: .9em;
 	line-height: 2;
 }
-#mainContent .tourDescription span.option {
+#mainContent .MagnificentDescription span.option {
 	font-weight: bold;
 	text-align: right;
 	display:block;
 }
-#mainContent .tourDescription img {
+#mainContent .MagnificentDescription img {
 	float: left;
 	padding: 10px 10px 10px 0;
 }
-#mainContent .tourDescription a.more {
+#mainContent .MagnificentDescription a.more {
 	display:block;
 	float: right;
 	width: 95px;
@@ -723,7 +767,7 @@ span.accent {
 #mainContent a.detail {
 	float: left;
 }
-#mainContent .tourDescription a.more:hover,#mainContent a.book:hover{
+#mainContent .MagnificentDescription a.more:hover,#mainContent a.book:hover{
 	background-position: right top;
 	border: none;
 }
@@ -1067,7 +1111,7 @@ span.accent {
 }
 
 
-/*Explore Missouri Tablet Styles*/
+/*Magnificent Mushroom Tablet Styles*/
 @media all and (min-width: 481px) and (max-width: 768px) {
 	/* ^1 --------------------------- global constants -------------------------*/
 	body {
@@ -1090,7 +1134,8 @@ span.accent {
 
 	/* ^3 ------------- home page specfic layout styles ----------- */
 	#home #wrapper {
-		background: #000 url(../images/home_page_back.jpg) no-repeat -50px 60px;
+		background: #000 url(../images/home_page_back.jpg) no-repeat 5px 6px;
+		
 	}
 	#actionCall {
 		height: 268px;
@@ -1222,10 +1267,10 @@ span.accent {
 	#mainContent #mainArticle h1 {
 		text-align: right;
 	}
-	#mainContent div.tourDescription {
+	#mainContent div.MagnificentDescription {
 		margin-bottom: .25em;
 	}
-	#mainContent .tourDescription h2 {
+	#mainContent .MagnificentDescription h2 {
 		margin-top: .5em;
 	}
 	#mainContent a.book {
@@ -1269,7 +1314,7 @@ span.accent {
 }
 
 
-/*Explore Missouri Mobile Styles*/
+/*Magnificent Mushroom Mobile Styles*/
 @media all and (min-width: 0px) and (max-width: 480px) {
 	/* ^1 --------------------------- global constants -------------------------*/
 	body {
@@ -1533,8 +1578,8 @@ span.accent {
 		margin: 0;
 		padding: 0;
 	}
-	/*tour description styles*/
-	#mainContent div.tourDescription {
+	/*restaurant description styles*/
+	#mainContent div.MagnificentDescription {
 		border-top: 2px solid #2c566a;
 		float: none;
 		clear: both;
@@ -1546,26 +1591,26 @@ span.accent {
 		-moz-transition: height 0.75s ease;
 		transition: height 0.75s ease;
 	}
-	#mainContent div.tourDescription:hover {
+	#mainContent div.MagnificentDescription:hover {
 		height: 450px;
 		overflow: hidden;
 		cursor: pointer;
 	}
 
-	#mainContent div.tourDescription img {
+	#mainContent div.MagnificentDescription img {
 		display: block;
 		margin: 0 auto 20px;
 		float: none;
 		padding: 0;
 	}
-	#mainContent .tourDescription h2 {
+	#mainContent .MagnificentDescription h2 {
 		font-size: 1em;
 		color: #193742;
 		font-weight: normal;
 		margin-bottom: .5em;
 		clear: right;
 	}
-	#mainContent .tourDescription h3.price {
+	#mainContent .MagnificentDescription h3.price {
 		font-size: 1em;
 		color: #666;
 		font-weight: normal;
@@ -1575,16 +1620,16 @@ span.accent {
 		clear: right;
 		margin: .25em 0 0;
 	}
-	#mainContent .tourDescription p {
+	#mainContent .MagnificentDescription p {
 		font-size: .9em;
 		line-height: 1.5;
 	}
-	#mainContent .tourDescription span.option {
+	#mainContent .MagnificentDescription span.option {
 		font-weight: bold;
 		text-align: right;
 		display:block;
 	}
-	#mainContent .tourDescription a.more {
+	#mainContent .MagnificentDescription a.more {
 		display:block;
 		float: right;
 		width: 95px;
