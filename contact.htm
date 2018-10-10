@@ -3,6 +3,26 @@
 <head>
 <meta charset="utf-8">
 <title>Magnificent Mushroom...</title>
+      <!--
+         Magnificent Mushroom main web page
+         Filename: contact.html
+      
+         Author: George Gates  
+         Date: September 15, 2018    
+         Breadsticks development of website for Professor Hvatum
+		 
+		 Supporting files: 	main.css
+							menu.html
+							mission.htm
+							Mushrooms.htm
+							404.html
+							contact.htm
+							login.htm
+							register.htm
+							resources.htm
+							support.htm
+							
+      -->
 <meta name="description" content="A lynda.com example of HTML5 and CSS3">
 <meta name="keywords" content="html5, css3, lynda, local storage, canvas, forms, semantics, web apps">
 <!--make sure mobile devices display the page at the proper scale	-->
@@ -16,7 +36,8 @@
 <div id="wrapper">
   <header id="mainHeader"> <a href="index.html" title="home" class="logo">
    <!-- I need this div because IE is an affront to mankind-->
-    <div id="logo">
+   <!-- begin ep changes to menu header 9/29/18 through line 79-->
+    <div>
     <h1>Magnificent Mushroom</h1>
     </div>
     </a>
@@ -25,48 +46,42 @@
       <ul>
        <li><a href="menu.html" title="Our Menu">Menu <br /><span class="tagline">Taste our bites</span></a>
           <ul>
-            <li><a href="menu.html" title="Our Menu">Featured Items</a></li>
-            <li><a href="documents/MissouriWines_eBook_Track.pdf" title="Wine Menu" target="_blank">Wine Menu</a></li>
-            <li><a href="documents/Lulus_Menu_Spring17.pdf" title="Complete Menu" target="_blank">Complete Menu</a></li>			
+            <li><a href="documents/MissouriWines_eBook_Track.pdf" title="Wine Menu"target="_blank">Wine Menu</a></li>
+            <li><a href="documents/Lulus_Menu_Spring17.pdf" title="Complete Menu"target="_blank">Complete Menu</a></li>
           </ul>
         </li>
         <li><a href="mission.htm" title="What we believe">Mission <br /><span class="tagline">what makes us different?</span></a></li>
-        <li><a href="resources.htm" title="planning resources">Reservations <br /><span class="tagline">set your reservations</span></a>
+        <li><a href="resources.htm" title="planning resources">Food <br /><span class="tagline">set your reservations</span></a>
+		<ul>
+		<li><a href="404.html" title="online ordering">Online Ordering</a></li>
+		<li><a target="_blank" href="http://www.opentable.com", "_blank" title="reservations">Reservations</a></li>
+        </ul>
+		</li>
+        <li><a href="contact.htm" title="contact us" class="last">Contact <br /><span class="tagline">we're listening</span></a>
           <ul>
-            <li><a href="404.html" title="Got questions?">Restaurant FAQs</a></li>
+			<li><a href="register.htm" title="Got questions?">Restaurant FAQs</a></li>
           </ul>
         </li>
-        <li><a href="Mushrooms.htm" title="Our community">Mushrooms <br /><span class="tagline">join our community</span></a>
-          <ul>
-            <li><a href="404.html" title="join our community">Join the Mushrooms</a></li>
-            <li><a href="404.html" title="read our blog!">Read our Blog</a></li>
-            <li><a href="404.html" title="contributor photos">GALLERY</a></li>
-          </ul>
-        </li>
-        <li><a href="contact.htm" title="contact us" class="current">Contact <br /><span class="tagline">we're listening</span></a>
-          <ul>
-            <li><a href="support.htm" title="need help?">Support</a></li>
-          </ul>
-        </li>
+		<li><a href="404.html" title="Check us out!">Gallery <br /><span class="tagline">Check us out!</span></a></li>
       </ul>
     </nav>
   </header>
+  <!-- end main header changes -->
   <section id="mainContent">
   <header id="contentHeader" class="hasCrumbs">
   <h1>Contact Us</h1>
-  <div id="subLinks">
+    <div id="subLinks">
   		<ul>
-            <li><a href="support.htm" title="need help?">Support</a></li>
+            <li><a href="register.htm" title="Got questions?">Restaurant FAQs</a></li>	
           </ul>
       </div>
   </header>
- <article id="mainArticle"> <h1>Get in touch</h1>
- <img src="images/emerald_bay.jpg" alt="I wish I was here" class="articleImage" />
+ <img src="images/Contact.jpg" class="articleImage" />
+ <img src="images/ArchView.jpg" alt="I wish I was here" class="articleImage" img style="float:left" />
  <div class="multiCol">
-   <p>If you're on this page, we're guessing you've got something to say! Drop us a line, and be sure to sign up for our newsletter. If you're looking for our seasonal Menu,  let us know when you're thinking of taking a trip. Not only will we get back to you with our website exclusive Menu (we don't publish these for everyone!), but we'll be sure to throw in some cool discounts and tour extras as well. </p>
-   <h2>Support options</h2>
-   <p>If you're currently on a tour and need support, please visit our <a href="support.htm">support</a> page. If none of these options are right for you and you still need to get in touch with us, feel free to call us at<span class="phone"> <strong>866.555.4310</strong>. Please note that this is not the support line, for support you could call </span><strong>866.555.4315</strong>. Thanks for getting in touch!</p>
+   <p>If you're on this page, we're guessing you've got something to say!  Call or message us and we will get back to you.  Heck, we even accept snail mail!
 </div>
+
 <form id="frmContact" name="frmContact" method="post" action="contact_process.htm">
           <fieldset id="personalInfo">
             <legend><strong>Personal Information</strong></legend>
@@ -146,90 +161,9 @@
               <input name="zip" type="text" class="text" id="zip" tabindex="160">
             </p>
           </fieldset>
-          <fieldset id="generalInfo">
-            <legend><strong>General Information</strong></legend>
-            <p>I would like more information about the following</p>
-            <div class="col1">
-              <p>
-<input type="checkbox" name="backpack" id="backpack" tabindex="170">
-              <label for="backpack">Tour St. Louis</label>
-</p>
-              <p>
-<input type="checkbox" name="calm" id="calm" tabindex="180">
-              <label for="calm">Missouri Wines</label>
-</p>
-              <p>
-<input type="checkbox" name="hotsprings" id="hotsprings" tabindex="190">
-              <label for="hotsprings">Things To Do</label>
-</p>
-            </div>
-            <div class="col2">
-              <p>
-<input type="checkbox" name="cycle" id="cycle" tabindex="210">
-              <label for="cycle">Cycle Missouri</label>
-</p>
-             <p>
- <input type="checkbox" name="desert" id="desert" tabindex="220">
-              <label for="desert">Local Farmers</label>
-</p>
-             <p>
- <input type="checkbox" name="kids" id="kids" tabindex="230">
-              <label for="kids">Kids Missouri</label>
-</p>
-            </div>
-            <div class="col3">
-              <p>
-<input type="checkbox" name="nature" id="nature" tabindex="240">
-              <label for="nature">Nature Watch</label>
-</p>
-              <p>
- <input type="checkbox" name="taste" id="taste" tabindex="250">
-              <label for="taste">Taste of Grand</label>
-</p>
-            </div>
-            <p class="clearBoth">
-         <label for="tripDate" class="inline">When are you thinking of touring?</label><br />
-        <input type="date" name="tripDate" id="tripDate" tabindex="265">
-            </p>
-            <p class="clearBoth">
-              <label for="comments">Comments</label><br />
-              <textarea name="comments2" id="comments" cols="45" rows="5" tabindex="270"></textarea>
-            </p>
-            <p>Would you like to receive our monthly tour specials newsletter? No, we don't spam or share your information with anyone else. Read our <a href="privacy.htm">privacy policy</a>.</p>
-            <p>
-              <input type="radio" name="newsletter" id="newsletter_yes" value="yes" tabindex="280">
-              <label for="newsletter_yes" class="inline break">Please send me the newsletter!</label>
-               <input type="radio" name="newsletter" id="newsletter_no" value="no" tabindex="290" checked>
-              <label for="newsletter_no" class="inline">No thanks!</label>
-            </p>
-            <p>
-              <input type="submit" name="submit2" id="submit2" value="Send" tabindex="300">
-            </p>
-          </fieldset>
-        </form>
+
  </article>
  </section>
-  <aside id="secondaryContent">
-  <div id="specials" class="callOut">
-        <h1>Monthly Events</h1>
-        <h2 class="top"><img src="images/WineImageIcon.jpg" alt="Missouri Wines" width="75" height="75" />Missouri Wines</h2>
-        <p>Wine Tasting Package <br />
-          <a href="404.html">$25</a></p>
-        <h2><img src="images/localfarmers.png" alt="Local Farmers" width="75" height="75" />Local Farmers</h2>
-        <p>Fresh Produce <br />
-          <a href="404.html">Market Price</a></p>
-        <h2><img src="images/Budweiser.jpg" alt="Tour St. Louis" width="75" height="41" />Tour St. Louis</h2>
-        <p>Tour Entry Fee <br />
-          <a href="404.html">$15.95</a></p>
-          <h2><img src="images/taste_bug.gif" alt="Taste of Grand" width="75" height="75" />Taste of Grand</h2>
-        <p>Come Join US <br />
-          <a href="Menu/tour_detail_taste.htm">$18.00</a></p>
-      </div>
-      <div id="trivia" class="callOut">
-        <h1>Did You Know?</h1>
-          <p>Missouri was named after a tribe of Sioux Indians called the Missouris. While often mistranslated as “muddy water,” the word actually means “town of the large canoes.”</p>
-        </div>
-  </aside>
   <footer id="pageFooter">
   <section id="quickLinks">
   <h1>Quick Nav</h1>
@@ -245,7 +179,7 @@
   <section id="footerResources">
   <h1>Resources</h1>
     <ul id="quickNav">
-      <li><a href="404.html" title="Our home page">FAQ</a></li>
+      <li><a href="404.htm" title="Our home page">FAQ</a></li>
       <li><a href="support.htm" title="Need help?">Support</a></li>
       <li><a href="resources/legal.htm" title="The fine print">Legal</a></li><li><a href="login.htm">Login</a></li>
     </ul>

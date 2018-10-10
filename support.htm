@@ -3,6 +3,26 @@
 <head>
 <meta charset="utf-8">
 <title>Magnificent Mushroom...</title>
+      <!--
+         Magnificent Mushroom main web page
+         Filename: support.html
+      
+         Author: George Gates  
+         Date: September 15, 2018    
+         Breadsticks development of website for Professor Hvatum
+		 
+		 Supporting files: 	main.css
+							menu.html
+							mission.htm
+							Mushrooms.htm
+							404.html
+							contact.htm
+							login.htm
+							register.htm
+							resources.htm
+							support.htm
+							
+      -->
 <meta name="description" content="A lynda.com example of HTML5 and CSS3">
 <meta name="keywords" content="html5, css3, lynda, local storage, canvas, forms, semantics, web apps">
 <!--make sure mobile devices display the page at the proper scale	-->
@@ -16,7 +36,8 @@
 <div id="wrapper">
   <header id="mainHeader"> <a href="index.html" title="home" class="logo">
    <!-- I need this div because IE is an affront to mankind-->
-    <div id="logo">
+    <!-- begin ep changes to menu header 9/29/18 through line 79-->
+    <div>
     <h1>Magnificent Mushroom</h1>
     </div>
     </a>
@@ -25,37 +46,32 @@
       <ul>
        <li><a href="menu.html" title="Our Menu">Menu <br /><span class="tagline">Taste our bites</span></a>
           <ul>
-            <li><a href="menu.html" title="Our Menu">Featured Items</a></li>
-            <li><a href="documents/MissouriWines_eBook_Track.pdf" title="Wine Menu" target="_blank">Wine Menu</a></li>
-            <li><a href="documents/Lulus_Menu_Spring17.pdf" title="Complete Menu" target="_blank">Complete Menu</a></li>			
+            <li><a href="documents/MissouriWines_eBook_Track.pdf" title="Wine Menu"target="_blank">Wine Menu</a></li>
+            <li><a href="documents/Lulus_Menu_Spring17.pdf" title="Complete Menu"target="_blank">Complete Menu</a></li>
           </ul>
         </li>
         <li><a href="mission.htm" title="What we believe">Mission <br /><span class="tagline">what makes us different?</span></a></li>
-        <li><a href="resources.htm" title="planning resources">Reservations <br /><span class="tagline">set your reservations</span></a>
+        <li><a href="resources.htm" title="planning resources">Food <br /><span class="tagline">set your reservations</span></a>
+		<ul>
+		<li><a href="404.html" title="online ordering">Online Ordering</a></li>
+		<li><a target="_blank" href="http://www.opentable.com", "_blank" title="reservations">Reservations</a></li>
+        </ul>
+		</li>
+        <li><a href="contact.htm" title="contact us" class="last">Contact <br /><span class="tagline">we're listening</span></a>
           <ul>
-            <li><a href="404.html" title="Got questions?">Restaurant FAQs</a></li>
+			<li><a href="register.htm" title="Got questions?">Restaurant FAQs</a></li>
           </ul>
         </li>
-        <li><a href="Mushrooms.htm" title="Our community">Mushrooms <br /><span class="tagline">join our community</span></a>
-          <ul>
-            <li><a href="404.html" title="join our community">Join the Mushrooms</a></li>
-            <li><a href="404.html" title="read our blog!">Read our Blog</a></li>
-            <li><a href="404.html" title="contributor photos">GALLERY</a></li>
-          </ul>
-        </li>
-        <li><a href="contact.htm" title="contact us" class="current">Contact <br /><span class="tagline">we're listening</span></a>
-          <ul>
-            <li><a href="support.htm" title="need help?">Support</a></li>
-          </ul>
-        </li>
+		<li><a href="404.html" title="Check us out!">Gallery <br /><span class="tagline">Check us out!</span></a></li>
       </ul>
     </nav>
   </header>
+  <!-- end main header changes -->
   <section id="mainContent">
   <header id="contentHeader">
-  <h1>Support Options</h1>
+  <h1>FAQ's</h1>
   </header>
- <article id="mainArticle"> <h1>Need some help?</h1>
+ <article id="mainArticle"> <h1>Got Questions?</h1>
  <img src="images/somehelp.jpg" alt="Biking along with Cycle Missouri" class="articleImage" />
    <p>If you have booked a reservation and need our assistance, we've got a couple of options for you. </p>
    <section id="supportOptions">
@@ -89,7 +105,7 @@
               I have booked a reservation</label>
             <label class="inline"><br />
               <input type="radio" name="/Menustatus" value="current" id="/Menustatus_1" tabindex="50" />
-              I am on a tour</label>
+              I have a large party</label>
           </p>
           <p>
             <label for="comments">Comments </label>
@@ -104,20 +120,16 @@
  </article>
  </section>
   <aside id="secondaryContent">
-<div id="specials" class="callOut">
-        <h1>Monthly Events</h1>
-        <h2 class="top"><img src="images/WineImageIcon.jpg" alt="Missouri Wines" width="75" height="75" />Missouri Wines</h2>
-        <p>Wine Tasting Package <br />
-          <a href="404.html">$25</a></p>
-        <h2><img src="images/localfarmers.png" alt="Local Farmers" width="75" height="75" />Local Farmers</h2>
-        <p>Fresh Produce <br />
-          <a href="404.html">Market Price</a></p>
-        <h2><img src="images/Budweiser.jpg" alt="Tour St. Louis" width="75" height="41" />Tour St. Louis</h2>
-        <p>Tour Entry Fee <br />
-          <a href="404.html">$15.95</a></p>
-          <h2><img src="images/taste_bug.gif" alt="The Taste of South Grand" width="75" height="75" />The Taste of South Grand</h2>
-        <p>Come Join US <br />
-          <a href="Menu/tour_detail_taste.htm">$18.00</a></p>
+  <div id="specials" class="callOut">
+        <h1>What's New?</h1>
+        <h2 class="top"><img src="images/books.jpg" alt="Local Library" width="75" height="75" />Local Library</h2>
+        <p>Come see our new book loan box <br /></p>
+        <h2><img src="images/bees.jpg" alt="bees" width="75" height="75" />New Bee Hive</h2>
+        <p>Our new Bee Hive is up and running <br /></p>
+        <h2><img src="images/labor.jpg" alt="holiday" width="75" height="75" />Labor Day</h2>
+        <p>We will be CLOSED this Labor Day! <br /></p>
+          <h2><img src="images/blue.jpg" alt="dog" width="75" height="75" />Furry Friends</h2>
+        <p>Don't forget to bring your best friend!  Dogs welcome in the patio area <br /></p>
       </div>
       <div id="trivia" class="callOut">
         <h1>Did You Know?</h1>

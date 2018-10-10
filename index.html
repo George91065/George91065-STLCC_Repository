@@ -24,16 +24,17 @@
 							
       -->
 
-<meta name="description" content="HTML5 and CSS3">
-<meta name="keywords" content="html5, css3, local storage, canvas, forms, semantics, web apps">
+<meta name="description" content="A lynda.com example of HTML5 and CSS3">
+<meta name="keywords" content="html5, css3, lynda, local storage, canvas, forms, semantics, web apps">
 <!--make sure mobile devices display the page at the proper scale	-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="css/main.css" rel="stylesheet" type="text/css" media='screen'>
 </head>
 <body id="home" class="no-js">
 <div id="wrapper">
-  <header id="mainHeader"> <a href="index.html" title="Home" class="logo">
+  <header id="mainHeader"> <a href="index.html" title="home" class="logo">
    <!-- I need this div because IE is an affront to mankind-->
+   <!-- begin ep changes to menu header 9/29/18 through line 76-->
     <div>
     <h1>Magnificent Mushroom</h1>
     </div>
@@ -43,36 +44,44 @@
       <ul>
        <li><a href="menu.html" title="Our Menu">Menu <br /><span class="tagline">Taste our bites</span></a>
           <ul>
-            <li><a href="menu.html" title="Our Menu">Featured Items</a></li>
-			<!--09172018GRG - Added target="_blank"-->
-            <li><a href="documents/MissouriWines_eBook_Track.pdf" title="Wine Menu" target="_blank">Wine Menu</a></li>
-            <li><a href="documents/Lulus_Menu_Spring17.pdf" title="Complete Menu" target="_blank">Complete Menu</a></li>			
+            <li><a href="documents/MissouriWines_eBook_Track.pdf" title="Wine Menu"target="_blank">Wine Menu</a></li>
+            <li><a href="documents/Lulus_Menu_Spring17.pdf" title="Complete Menu"target="_blank">Complete Menu</a></li>
           </ul>
         </li>
         <li><a href="mission.htm" title="What we believe">Mission <br /><span class="tagline">what makes us different?</span></a></li>
-        <li><a href="resources.htm" title="planning resources">Reservations <br /><span class="tagline">set your reservations</span></a>
-          <ul>
-            <li><a href="404.html" title="Got questions?">Restaurant FAQs</a></li>
-          </ul>
-        </li>
-        <li><a href="Mushrooms.htm" title="Our community">Mushrooms <br /><span class="tagline">join our community</span></a>
-          <ul>
-            <li><a href="404.html" title="join our community">Join the Mushrooms</a></li>
-            <li><a href="404.html" title="read our blog!">Read our Blog</a></li>
-            <li><a href="404.html" title="contributor photos">GALLERY</a></li>
-          </ul>
-        </li>
+        <li><a href="resources.htm" title="planning resources">Food <br /><span class="tagline">set your reservations</span></a>
+		<ul>
+		<li><a href="404.html" title="online ordering">Online Ordering</a></li>
+		<li><a target="_blank" href="http://www.opentable.com", "_blank" title="reservations">Reservations</a></li>
+        </ul>
+		</li>
         <li><a href="contact.htm" title="contact us" class="last">Contact <br /><span class="tagline">we're listening</span></a>
           <ul>
-            <li><a href="support.htm" title="need help?">Support</a></li>
+			<li><a href="register.htm" title="Got questions?">Restaurant FAQs</a></li>
           </ul>
         </li>
+		<li><a href="404.html" title="Check us out!">Gallery <br /><span class="tagline">Check us out!</span></a></li>
       </ul>
     </nav>
   </header>
+  <!-- end main header changes -->
   <section id="actionCall">
-  <h1>The Magnificent Mushroom</h1>
+      <!-- for consideration by the Breadstick team 9/30/2018 grg
+      <h1>Our Location</h1>
+      -->
+        <div class="mapouter">
+            <div class="gmap_canvas">
+                <iframe width="348" height="364" id="gmap_canvas" src="https://maps.google.com/maps?q=3201%20south%20grand&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                <a href="https://www.embedgooglemap.net"></a>
+            </div><style>.mapouter{text-align:right;height:364px;width:348px;}.gmap_canvas {overflow:hidden;background:none!important;height:364px;width:348px;}</style>
+        </div> 
+
+      <!-- ep adjustment - removed "Magnificent Mushroom" header from main page here  9/29/18   -->
+  
+  
+  <!--grg 9/30/2018 - removed the following section
   <a href="404.html" title="Find your table!"><h2>Find your table</h2></a>
+  -->
   </section>
   <div id="contentWrapper">
   <section id="mainContent">
@@ -85,33 +94,21 @@
 	<!--<source src="_video/podcast_teaser.webm" type="video/webm" />-->
 	<!--<source src="_video/podcast_teaser.theora.ogv"type="video/ogg" />-->
 </video>
-  <p class="videoText">Join us each month as we publish a new Magnificent Mushroom video podcast, with featured specials, customer photos, and some exctiing new features!<span class="accent"><a href="404.html" title="Video Podcast">Watch the full video</a></span></p>
+  <p class="videoText">Join us each month as we publish a new Magnificent Mushroom video podcast, with featured specials, customer photos, and some exciting new features!<span class="accent"><a href="404.html" title="Video Podcast">Watch the full video</a></span></p>
   </article>
   </section>
     <aside id="secondaryContent">
-        <div id="specials" class="callOut">
-            <h1>Monthly Events</h1>
-            <h2 class="top"><img src="images/WineImageIcon.jpg" alt="Missouri Wines" width="75" height="75">Missouri Wines</h2>
-            <p>
-                Wine Tasting Package <br>
-                <a href="404.html">$25</a>
-            </p>
-            <h2><img src="images/localfarmers.png" alt="Local Farmers" width="75" height="75">Local Farmers</h2>
-            <p>
-                Fresh Produce <br>
-                <a href="404.html">Market Price</a>
-            </p>
-            <h2><img src="images/Budweiser.jpg" alt="Tour St. Louis" width="75" height="41">Tour St. Louis</h2>
-            <p>
-                Tour Entry Fee <br>
-                <a href="404.html">$15.95</a>
-            </p>
-            <h2><img src="images/taste_bug.gif" alt="The Taste of South Grand" width="75" height="75">The Taste of South Grand</h2>
-            <p>
-                Come Join US <br>
-                <a href="Menu/tour_detail_taste.htm">$18.00</a>
-            </p>
-        </div>
+  <div id="specials" class="callOut">
+        <h1>What's New?</h1>
+        <h2 class="top"><img src="images/books.jpg" alt="Local Library" width="75" height="75" />Local Library</h2>
+        <p>Come see our new book loan box <br /></p>
+        <h2><img src="images/bees.jpg" alt="bees" width="75" height="75" />New Bee Hive</h2>
+        <p>Our new Bee Hive is up and running <br /></p>
+        <h2><img src="images/labor.jpg" alt="holiday" width="75" height="75" />Labor Day</h2>
+        <p>We will be CLOSED this Labor Day! <br /></p>
+          <h2><img src="images/blue.jpg" alt="dog" width="75" height="75" />Furry Friends</h2>
+        <p>Don't forget to bring your best friend!  Dogs welcome in the patio area <br /></p>
+      </div>
         <div id="trivia" class="callOut">
             <h1>Did You Know?</h1>
             <p>Our restaurant gives back to the community!</p>

@@ -23,14 +23,21 @@
 							support.htm
 			Image Files:	Lulus_Menu_Spring17
 							1Foodphoto
-							27Foodphoto
+							2Foodphoto
 							3Foodphoto
+							5Foodphoto
+							6Foodphoto
 							7Foodphoto
-							23Foodphoto
-							15Foodphoto
+							8Foodphoto
 							9Foodphoto
 							10Foodphoto
+							11Foodphoto
+							12Foodphoto
 							14Foodphoto
+							15Foodphoto
+							27Foodphoto
+							23Foodphoto
+							
 							
 							
       -->
@@ -47,41 +54,37 @@
 <div id="wrapper">
   <header id="mainHeader"> <a href="index.html" title="home" class="logo">
    <!-- I need this div because IE is an affront to mankind-->
-    <div id="logo">
+   <!-- begin ep changes to menu header 9/29/18 through line 97-->
+    <div>
     <h1>Magnificent Mushroom</h1>
     </div>
     </a>
     <nav id="siteNav">
       <h1>Where do you want to go?</h1>
       <ul>
-       <li><a href="menu.html" title="Our Menu" class="current">Menu <br /><span class="tagline">Taste our bites</span></a>
+       <li><a href="menu.html" title="Our Menu">Menu <br /><span class="tagline">Taste our bites</span></a>
           <ul>
-            <li><a href="menu.html" title="Our Menu">Featured Items</a></li>
-            <li><a href="documents/MissouriWines_eBook_Track.pdf" title="Wine Menu" target="_blank">Wine Menu</a></li>
-            <li><a href="documents/Lulus_Menu_Spring17.pdf" title="Complete Menu" target="_blank">Complete Menu</a></li>			
+            <li><a href="documents/MissouriWines_eBook_Track.pdf" title="Wine Menu"target="_blank">Wine Menu</a></li>
+            <li><a href="documents/Lulus_Menu_Spring17.pdf" title="Complete Menu"target="_blank">Complete Menu</a></li>
           </ul>
         </li>
         <li><a href="mission.htm" title="What we believe">Mission <br /><span class="tagline">what makes us different?</span></a></li>
-        <li><a href="resources.htm" title="planning resources">Reservations <br /><span class="tagline">set your reservations</span></a>
-          <ul>
-            <li><a href="404.html" title="Got questions?">Restaurant FAQs</a></li>
-          </ul>
-        </li>
-        <li><a href="Mushrooms.htm" title="Our community">Mushrooms <br /><span class="tagline">join our community</span></a>
-          <ul>
-            <li><a href="404.html" title="join our community">Join the Mushrooms</a></li>
-            <li><a href="404.html" title="read our blog!">Read our Blog</a></li>
-            <li><a href="404.html" title="contributor photos">GALLERY</a></li>
-          </ul>
-        </li>
+        <li><a href="resources.htm" title="planning resources">Food <br /><span class="tagline">set your reservations</span></a>
+		<ul>
+		<li><a href="404.html" title="online ordering">Online Ordering</a></li>
+		<li><a target="_blank" href="http://www.opentable.com", "_blank" title="reservations">Reservations</a></li>
+        </ul>
+		</li>
         <li><a href="contact.htm" title="contact us" class="last">Contact <br /><span class="tagline">we're listening</span></a>
           <ul>
-            <li><a href="support.htm" title="need help?">Support</a></li>
+			<li><a href="register.htm" title="Got questions?">Restaurant FAQs</a></li>
           </ul>
         </li>
+		<li><a href="404.html" title="Check us out!">Gallery <br /><span class="tagline">Check us out!</span></a></li>
       </ul>
     </nav>
   </header>
+  <!-- end main header changes -->
   <section id="mainContent">
   <header id="contentHeader" class="hasCrumbs">
   <h1>Our Menu</h1>
@@ -94,62 +97,180 @@
       </div>
   </header>
  <article id="mainArticle"> <h1>Something for everyone</h1>
- <img src="images/1Foodphoto.jpg" alt="Our Menu" class="articleImage" />
+ <img src="images/1Foodphoto.JPG" alt="Our Menu" class="articleImage" />
  <div class="multiCol">
-   <p>What type of Magnificent Mushroom experience do you want to have? Are you looking for an exciting vegetarian experience? A chance to relax and try new foods? As you can see, we've got you covered. We offer vegetarian menu options that are as diverse as Missouri itself! Select any of Our Menu options and learn more about pricing and availability. </p>
-   <p>If you want to refine your search a bit, feel free to browse our <a href="menu.html">Featured Items</a> menu or <a href="documents/MissouriWines_eBook_Track.pdf">Wine Menu</a>. You can even check out our cool Restaurant Blog to help you choose the foods that will give you the best experience based on your specific preferences. If you have any questions about any of our menu items, feel free to <a href="contact.htm">contact us</a>, or check out our handy <a href="404.html">FAQ</a> for a quick overview of our services.</p>
+   <!-- ep edit 9/29/18 -->
+   <p>Are you looking for an exciting vegetarian experience? A chance to relax and try new foods? We offer vegetarian menu options that are as diverse as Missouri itself! </p>
+   <p>Feel free to browse our <a href="documents/MissouriWines_eBook_Track.pdf" target="_blank">Wine Menu</a>. You can even check out our cool <a href="documents/Lulus_Menu_Spring17.pdf" target="_blank">Menu</a> to help you choose the foods that will give you the best experience based on your specific preferences. If you have any questions about any of our menu items, feel free to <a href="contact.htm">contact us</a>, or check out our handy <a href="register.htm">FAQ</a> for a quick overview of our services.</p>
  </div>
- <div id="MagnificentDescriptions">
+
+ <!-- begin ep edit 9/29/18 through line 254 -->
+ 
+<button type="submit" form="form1"value="starters" onclick="starters()" >Starters</button>
+<button type="submit" form="form1"value="entree" onclick="entree()" >Entree Bowls</button>
+<button type="submit" form="form1"value="tacos" onclick="tacos()" >Tacos</button>
+<button type="submit" form="form1"value="burgers" onclick="burgers()" >Burgers & Wraps</button>
+<button type="submit" form="form1"value="dessert" onclick="dessert()" >Dessert</button>
+
+ 
+<div id="entree">
+
 <div class="MagnificentDescription">
-<h2>Banh Mi Bowl</h2>
-      <p><img src="images/3Foodphoto.JPG" alt="Banh Mi Bowl" width="195" height="195" />five spice marinated jackfruit with fresh greens, brown rice, cucumber, shredded carrot, onion, radish, cilantro, fresh avocado, mayo and house-made vietnamese bahn mi sauce.</p>
+	<h2>Banh Mi Bowl </h2> <h3>$9.95 </h3>
+      <p><img src="images/3Foodphoto.jpg" alt="Banh Mi Bowl" width="195" height="195" />five spice marinated jackfruit with fresh greens, brown rice, cucumber, shredded carrot, onion, radish, cilantro, fresh avocado, mayo and house-made vietnamese bahn mi sauce. <br /> <img src="images/gf.png" width="30" height="30"> <img src="images/nf.png" width="30" height="30"></p>
 </div>
+<div id="entree">
 <div class="MagnificentDescription">
-      <h2>Buffalo Blue Burger</h2>
-      <p><img src="images/10Foodphoto.JPG" width="195" height="195" alt="Buffalo Blue Burger" />house-made sweet potato black bean burger on a pretzel bun with fresh greens, red onion, spicy buffalo sauce and creamy ranch.</p>
+      <h2>Sushi Bowl</h2> <h3>$9.95</h3>
+      <p><img src="images/9Foodphoto.JPG" width="195" height="195" alt="Sushi Bowl" />sushi rice, watermelon, sashimi, avocado, cucumber, radish, scallions, pickled ginger and our house made spicy mayo served with a side of wasabi. <br /> <img src="images/gf.png" width="30" height="30"> <img src="images/nf.png" width="30" height="30"></p>
 </div>
-<div class="MagnificentDescription">
-      <h2>Buffalo Cauliflower Bites</h2>
-      <p><img src="images/7Foodphoto.JPG" width="195" height="195" alt="Buffalo Cauliflower Bites" />with ranch dipping sauce.</p>
 </div>
+<div id="entree">
 <div class="MagnificentDescription">
-      <h2>Tater Tots</h2>
+      <h2>Chipotle Black Bean Bowl</h2> <h3>$8.95</h3>
+      <p><img src="images/11Foodphoto.JPG" width="195" height="195" alt="Sushi Bowl" />roasted smoky sweet potato, mushroom and onions over shredded kale, brown rice, black beans topped with fresh avocado, green onion and cilantro with house-made spicy chipotle sauce.(add bbq jackfruit for $2 more) <br /> <img src="images/gf.png" width="30" height="30"> <img src="images/nf.png" width="30" height="30"></p>
+</div>
+</div>
+<div id="entree">
+<div class="MagnificentDescription">
+      <h2>Spring Roll Bowl</h2> <h3>$9.95</h3>
+      <p><img src="images/12Foodphoto.JPG" width="195" height="195" alt="Sushi Bowl" />house-made crispy cauliflower bites over fresh greens, brown rice, cucumber, shredded carrot, green onion, cilantro, crushed peanuts, fresh avocado, lime, basil and mint with our house-made peanut sauce.</p>
+</div>
+</div>
+</div>
+
+
+<div id="starters">
+
+<div class="MagnificentDescription">
+      <h2>Buffalo Cauliflower Bites</h2> <h3>$5.95</h3>
+      <p><img src="images/7Foodphoto.JPG" width="195" height="195" alt="Buffalo Cauliflower Bites" />with ranch dipping sauce. </p>
+</div>
+<div id="starters">
+<div class="MagnificentDescription">
+      <h2>Tater Tots</h2> <h3>$3.95</h3>
       <p><img src="images/23Foodphoto.JPG" width="195" height="195" alt="Tater Tots" />with cajun seasoning and spicy chipotle dipping sauce.</p>
 </div>
-<div class="MagnificentDescription">
-      <h2>Portobello Gyro</h2>
-      <p><img src="images/15Foodphoto.JPG" width="195" height="195" alt=" Portobello Gyro" />marinated and grilled slices of portobello mushroom with fresh avocado, greens, cucumber slices, red onion and house-made tzaziki sauce in a grilled pita.</p>
 </div>
-<div class="MagnificentDescription">
-      <h2>Sushi Bowl</h2>
-      <p><img src="images/9Foodphoto.JPG" width="195" height="195" alt="Sushi Bowl" />sushi rice, watermelon, sashimi, avocado, cucumber, radish, scallions, pickled ginger and our house made spicy mayo served with a side of wasabi.</p>
 </div>
+
+
+<div id="burgers">
+
 <div class="MagnificentDescription">
-      <h2>Sweet Potato Black Bean Burger</h2>
+      <h2>Buffalo Blue Burger</h2> <h3>$6.95</h3>
+      <p><img src="images/10Foodphoto.JPG" width="195" height="195" alt="Buffalo Blue Burger" />house-made sweet potato black bean burger on a pretzel bun with fresh greens, red onion, spicy buffalo sauce and creamy ranch.</p>
+</div>
+<div id="burgers">
+<div class="MagnificentDescription">
+      <h2>Sweet Potato Black Bean Burger</h2> <h3>$6.95</h3>
       <p><img src="images/27Foodphoto.JPG" width="195" height="195" alt="Food Item No. 7" />house-made sweet potato black bean burger on a pretzel bun with fresh greens, red onion and chipotle sauce.</p>
 </div>
+</div>
+<div id="burgers">
 <div class="MagnificentDescription">
-      <h2>Thai Crunch Wrap</h2>
+      <h2>Thai Crunch Wrap</h2> <h3>$8.95</h3>
       <p><img src="images/14Foodphoto.JPG" width="195" height="195" alt="Thai Crunch Wrap" />shredded kale, organic marinated tofu, shredded carrot, red cabbage, cucumber, green onion, red pepper, radish, crushed peanuts, mint, basil and house-made Thai peanut dressing in a whole wheat wrap.</p>
 </div>
 </div>
+<div id="burgers">
+<div class="MagnificentDescription">
+      <h2>Sweet Potato Falafel</h2> <h3>$6.95</h3>
+      <p><img src="images/15Foodphoto.JPG" width="195" height="195" alt=" Portobello Gyro" />our version of the mediterranean sandwich.  House-made crispy sweet potato fritters, cucumber, red onion, fresh greens and tzaziki sauce in a warm pita.</p>
+</div>
+</div>
+</div>
+
+
+<div id="tacos">
+<div class="MagnificentDescription">
+	<h2>Magnificent Tacos</h2> <h3>$7.95</h3>
+      <p><img src="images/5Foodphoto.JPG" alt="Banh Mi Bowl" width="195" height="195" />roasted smoky sweet potato, mushroom and onions with black beans, fresh avocado and cilantro with house-made spicy chipotle sauce on white corn tortillas.<br /> <img src="images/gf.png" width="30" height="30"> <img src="images/nf.png" width="30" height="30"></p>
+</div>
+<div class="MagnificentDescription">
+	<h2>Banh Mi Tacos</h2> <h3>$7.95</h3>
+      <p><img src="images/2Foodphoto.JPG" alt="Banh Mi Bowl" width="195" height="195" />five spice marinated jackfruit with shredded carrot, cucumber, onion, cilantro, lime, radish, mayo and house-made vietnamese banh mi sauce on white corn tortillas.<br /> <img src="images/gf.png" width="30" height="30"> <img src="images/nf.png" width="30" height="30"></p>
+</div>
+<div class="MagnificentDescription">
+	<h2>BBQ Jack Tacos</h2> <h3>$7.95</h3>
+      <p><img src="images/6Foodphoto.JPG" alt="Banh Mi Bowl" width="195" height="195" />slow smoked jackfruit smothered in Pappy's Original BBQ Sauce topped with house-made slaw on white corn tortillas.<br /> <img src="images/gf.png" width="30" height="30"> <img src="images/sf.png" width="30" height="30"> <img src="images/nf.png" width="30" height="30"></p>
+</div>
+<div class="MagnificentDescription">
+	<h2>Spring Roll Burrito</h2> <h3>$8.95</h3>
+      <p><img src="images/8Foodphoto.JPG" alt="Banh Mi Bowl" width="195" height="195" />house-made crispy cauliflower bites with fresh greens, cucumber, carrot, green onion, cilantro, crushed peanuts, avocado, basil and mint with our house-made peanut sauce wrapped in a whole wheat tortilla.</p>
+</div>
+ 
+</div>
+
+
+<div id="dessert">
+<div class="MagnificentDescription">
+	<h2>Vegan Pastries </h2> 
+      <p><img src="images/16Foodphoto.JPG" alt="Vegan Pastries" width="195" height="195" />Enjoy a daily variety of freshly made vegan cookies, muffins and cakes from our friends at Genuinely Baked.</p>
+</div>
+</div>
+
+<style>
+	
+</style>
+<script>
+function entree() {
+	
+   document.getElementById('entree').style.display = "block";
+    document.getElementById('starters').style.display = "none";
+	document.getElementById('burgers').style.display = "none";
+	document.getElementById('tacos').style.display = "none";
+	document.getElementById('dessert').style.display = "none";
+   
+}
+function tacos() {
+	
+   document.getElementById('entree').style.display = "none";
+    document.getElementById('starters').style.display = "none";
+	document.getElementById('burgers').style.display = "none";
+	document.getElementById('tacos').style.display = "block";
+	document.getElementById('dessert').style.display = "none";
+   
+}
+function starters() {
+   document.getElementById('starters').style.display = "block";
+   document.getElementById('entree').style.display = "none";
+   document.getElementById('burgers').style.display = "none";
+   document.getElementById('tacos').style.display = "none";
+   document.getElementById('dessert').style.display = "none";
+}
+function burgers() {
+	document.getElementById('burgers').style.display = "block";
+   document.getElementById('starters').style.display = "none";
+   document.getElementById('entree').style.display = "none";
+   document.getElementById('tacos').style.display = "none";
+   document.getElementById('dessert').style.display = "none";
+}
+function dessert() {
+	document.getElementById('burgers').style.display = "none";
+	document.getElementById('starters').style.display = "none";
+	document.getElementById('entree').style.display = "none";
+	document.getElementById('tacos').style.display = "none";
+	document.getElementById('dessert').style.display = "block";
+	}
+
+
+
+<!-- end ep edit 9/29/18 -->
+	</script>
  </article>
  </section>
   <aside id="secondaryContent">
   <div id="specials" class="callOut">
-        <h1>Monthly Events</h1>
-        <h2 class="top"><img src="images/WineImageIcon.jpg" alt="Missouri Wines" width="75" height="75" />Missouri Wines</h2>
-        <p>Wine Tasting Package <br />
-          <a href="404.html">$25</a></p>
-        <h2><img src="images/localfarmers.png" alt="Local Farmers" width="75" height="75" />Local Farmers</h2>
-        <p>Fresh Produce <br />
-          <a href="404.html">Market Price</a></p>
-        <h2><img src="images/Budweiser.jpg" alt="Tour St. Louis" width="75" height="41" />Tour St. Louis</h2>
-        <p>Tour Entry Fee <br />
-          <a href="404.html">$15.95</a></p>
-          <h2><img src="images/taste_bug.gif" alt="The Taste of South Grand" width="75" height="75" />The Taste of South Grand</h2>
-        <p>Come Join US <br />
-          <a href="Menu/tour_detail_taste.htm">$18.00</a></p>
+        <h1>What's New?</h1>
+        <h2 class="top"><img src="images/books.jpg" alt="Local Library" width="75" height="75" />Local Library</h2>
+        <p>Come see our new book loan box <br /></p>
+        <h2><img src="images/bees.jpg" alt="bees" width="75" height="75" />New Bee Hive</h2>
+        <p>Our new Bee Hive is up and running <br /></p>
+        <h2><img src="images/labor.jpg" alt="holiday" width="75" height="75" />Labor Day</h2>
+        <p>We will be CLOSED this Labor Day! <br /></p>
+          <h2><img src="images/blue.jpg" alt="dog" width="75" height="75" />Furry Friends</h2>
+        <p>Don't forget to bring your best friend!  Dogs welcome in the patio area <br /></p>
       </div>
       <div id="trivia" class="callOut">
         <h1>Did You Know?</h1>
